@@ -78,20 +78,24 @@ def run():
         
     for worker in all_python_devs:
         print(worker) 
-    
+    print("Termina de imprimir desarrolladores")
     
     for workers in all_platzi_workers:
         print(workers) 
+    print("Termina de imprimir trabajadores")
 
 
     adults = list(filter(lambda worker: worker["age"] > 18,DATA))
     adults = list(map(lambda worker: worker["name"],adults))
+
     old_people = list(map(lambda worker: worker | {"old":worker["age"] > 70}, DATA))
     
     for worker in adults:
         print(worker)
+    print("Termina de imprimir adultos")
 
     for worker in old_people:
         print(worker)
+    print("Termina de imprimir mayores de 70")
 if __name__ == "__main__":
     run()
