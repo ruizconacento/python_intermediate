@@ -1,3 +1,5 @@
+#Assert no se usa normalmente, sino que es más común usar try excep raise y finanally
+
 def divisors(num):
     divisors = []
     for i in range(1, num + 1):
